@@ -1,22 +1,62 @@
-import Header from "../../components/Header/Header"
-import Card from "../../components/Card/Card"
+import Header from "../../components/Header/Header";
+import Card from "../../components/Card/Card";
+import Grid from "../../components/Grid/Grid";
+import Footer from "../../components/Footer/Footer";
 
 export default function Menu() {
     return (
         <>
-            <Header/>
+            <Header />
 
             <section className="max-w-4xl mx-auto text-center">
                 <h1 className="mt-12 font-bold text-4xl">Cardápio:</h1>
                 <p className="text-stone-600">Terça-feira, 29 de setembro</p>
 
-                <h2 className="mt-16 mb-10 font-bold text-2xl">Café da Manhã (9:30 - 9:45)</h2>
-                
-                <Card
-                name={"Pão"} image={"pao"} desc={"Pão francês amanteigado."}/>
-                <Card
-                name={"Leite com cacau"} image={"leite"} desc={"Leite quente adocicado com pó de cacau."}/>
+                <h2 className="mt-16 mb-10 font-bold text-2xl">
+                    Café da Manhã (9:30 - 9:45)
+                </h2>
+
+                <Grid>
+                    <Card name={"Pão"} image={"pao"} desc={"Pão francês amanteigado."} />
+                    <Card name={"Leite com cacau"} image={"leite"} desc={"Leite quente adocicado com pó de cacau."} />
+                    <Card name={"Banana"} image={"banana"} desc={"Banana prata madura."} />
+                    <Card name={"Bolacha Salgada"} image={"bolacha_sal"} desc={"Bolacha de água e sal."}/>
+                </Grid>
+
+                <h2 className="mt-16 mb-10 font-bold text-2xl">
+                    Almoço (12:15 - 13:30)
+                </h2>
+
+                <Grid>
+                    <Card name={"Arroz"} image={"arroz"} desc={"Arroz branco, frito ao alho e cebola."} />
+                    <Card name={"Feijão"} image={"feijao"} desc={"Feijão cozido, temperado com alho e cebola."} />
+                    <Card name={"Abacaxi"} image={"abacaxi"} desc={"Abacaxi fatiado."} />
+                    <Card name={"Carne em cubos"} image={"carne"} desc={"Carne cozida, cortada em cubos."} />
+                </Grid>
+
+                <h2 className="mt-16 mb-10 font-bold text-2xl">
+                    Café da Tarde (16:00 - 16:15)
+                </h2>
+
+                <Grid>
+                    <Card name={"Pão"} image={"pao"} desc={"Pão francês amanteigado."} />
+                    <Card name={"Leite com cacau"} image={"leite"} desc={"Leite quente adocicado com pó de cacau."} />
+                    <Card name={"Abacaxi"} image={"abacaxi"} desc={"Abacaxi fatiado."} />
+                </Grid>
+
+                <h2 className="mt-16 mb-10 font-bold text-2xl">
+                    Jantar (20:30 - 21:45)
+                </h2>
+
+                <Grid>
+                    <Card name={"Arroz"} image={"arroz"} desc={"Arroz branco, frito ao alho e cebola."} />
+                    <Card name={"Feijão"} image={"feijao"} desc={"Feijão cozido, temperado com alho e cebola."} />
+                    <Card name={"Frango"} image={"frango"} desc={"Frango frito temperado com sal e pimenta."} />
+                    <Card name={"Banana"} image={"banana"} desc={"Banana prata madura."} />
+                </Grid>
             </section>
+
+            <Footer/>
         </>
-    )
+    );
 }

@@ -1,4 +1,5 @@
 import Header from "../../components/Header/Header"
+
 import { NavLink } from "react-router"
 
 export default function Home() {
